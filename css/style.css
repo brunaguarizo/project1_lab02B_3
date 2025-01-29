@@ -29,6 +29,18 @@ html {
   font-style: medium ;
   font-size: 18px ;
 }
+
+.introduction{
+  font-family: "Ubuntu", serif;
+  font-style: medium ;
+  font-size: 34px ;
+}
+
+.metrolics__highlight{
+  color: #1EAFDE;
+}
+
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
