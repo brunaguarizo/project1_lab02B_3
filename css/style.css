@@ -23,6 +23,12 @@ html {
   font-family: "Ubuntu", serif;
   font-style: medium ;
 }
+
+.banner__box--text{
+  font-family: "Ubuntu", serif;
+  font-style: medium ;
+  font-size: 18px ;
+}
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
