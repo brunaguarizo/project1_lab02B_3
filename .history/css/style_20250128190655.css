@@ -17,9 +17,8 @@ html {
   line-height: 1.4;
 }
 
-.navbar__item{
-  font-family: "Ubuntu", serif;
-  font-style: medium ;
+header{
+  font-family: "Ubunto", serif;
 }
 
 /*
