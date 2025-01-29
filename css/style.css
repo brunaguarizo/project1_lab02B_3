@@ -15,6 +15,7 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+  font-family: "Ubuntu", serif;
 }
 
 /* Header Typography */
@@ -39,6 +40,19 @@ html {
 .metrolics__highlight{
   color: #1EAFDE;
 }
+
+.offers__heading{
+  font-family: "Ubuntu", serif;
+  font-style: medium ;
+  font-size:s 28px ;
+}
+.offers__subheading{
+  font-family: "Ubuntu", serif;
+  font-style: regular ;
+  font-size: 12px ;
+  color: #A3A3A3;
+}
+
 
 
 /*
