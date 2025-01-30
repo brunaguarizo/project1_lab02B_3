@@ -27,259 +27,246 @@
 
 <body>  
 <!-- HEADER -->
-<header> 
+<header class="header__row"> 
   <!-- Metroclis logo -->
-  <h1>Metrolics</h1>
-  <img src="" class="logo__icon" alt="">
+  <div class="header__column"> 
+      <img src="/" class="logo__icon" alt="/">
+  </div>
   <!-- NAV BAR -->
-    <nav class="navbar">
-      <ul class="navbar__menu">
-        <li><a class="navbar__item" href="#">Home<img src="" class="navbar__icon" alt=""></a></li>
-        <li><a class="navbar__item" href="#">Portfolio<img src="" class="navbar__icon" alt=""></a></li>
-        <li><a class="navbar__item" href="#">Blog<img src="" class="navbar__icon" alt=""></a></li>
-        <li><a class="navbar__item" href="#">Quo Vadis?<img src="" class="navbar__icon" alt=""></a></li>
-        <li><a class="navbar__item" href="#">Let's Chat<img src="" class="navbar__icon" alt=""></a></li>
-      </ul>
+    <nav class="navbar__row">
+        <a class="navbar__item" href="#">Home<img src="/" class="navbar__icon" alt="/"></a>
+        <a class="navbar__item" href="#">Portfolio<img src="/" class="navbar__icon" alt="/"></a>
+        <a class="navbar__item" href="#">Blog<img src="/" class="navbar__icon" alt="/"></a>
+        <a class="navbar__item" href="#">Quo Vadis?<img src="/" class="navbar__icon" alt="/"></a>
+        <a class="navbar__item" href="#">Let's Chat<img src="/" class="navbar__icon" alt="/"></a>
     </nav>
 </header>
 <!-- HEADER -->
 
 <!-- MAIN -->
-<main>
-<!-- SECTION 01 - BANNER -->
-  <section class="section01">
-      <div class="banner">
-        <img class="banner__image" src="" alt="">
+<main class="main__row">
+<!-- HERO BANNER -->
+  <section class="hero-banner">
+      <div class="banner-container">
+        <img class="banner__image" src="/" alt="/">
         <div class="banner__box">
-          <div class="banner__box--color1"></div>
           <div class="banner__box--text">Metro Style</div>
         </div>
 
         <div class="banner__box">
-          <div class="banner__box--color2"></div>
           <div class="banner__box--text">Quick on the feet</div>
         </div>
 
         <div class="banner__box">
-          <div class="banner__box--color3"></div>
           <div class="banner__box--text">Metro Styling reinvented</div>
         </div>
       </div>
   </section>
-<!-- SECTION 01 - BANNER -->
+<!-- HERO BANNER -->
 
-<!-- SECTION 02 - INTRO -->
+<!-- WHO WE ARE - INTRO -->
   <section class="introduction">
-    <h2>Hey folks! We are the <span class="metrolics__highlight">Metrolics</span> team. It sports a responsive layout with a mobile layout.theme.</h2>
+    <h1>Hey folks! We are the <span class="metrolics__highlight">Metrolics</span> team. It sports a responsive layout with a mobile layout.theme.</h1>
   </section>
-<!-- SECTION 02 - INTRO -->
+<!-- WHO WE ARE - INTRO -->
 
-<!-- SECTION 03 - WHAT WE DO -->
-  <section class="section03">
-    <header class="offers"> <!-- SHOULD I HAVE A HEADER OR OTHER TAG HERE? -->
-      <h3 class="offers__heading">Things That We Do</h3>
+<!-- WHAT WE DO -->
+  <section class="what-we-do">
+    <header class="offers">
+      <h2 class="offers__heading">Things That We Do</h2>
       <p class="offers__subheading">Ask us what we can do for you</p>
     </header>
 
     <div class="services">
       <div class="service__box">
-        <img class="service__icon" src="" alt="">
-        <h4 class="service__name">Web Solutions</h4>
+        <h3 class="service__name">Web Solutions</h3>
         <p>We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. We are confident you will be pleased with the results.</p>
+        <img class="service__icon" src="/" alt="/">
       </div>
 
       <div class="service__box">
-        <img class="service__icon" src="" alt="">
-        <h4 class="service__name"> Web Solutions</h4>
+        <h3 class="service__name">Web Solutions</h3>
         <p>We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. We are confident you will be pleased with the results.</p>
+        <img class="service__icon" src="/" alt="/">
       </div>
 
       <div class="service__box">
-        <img class="service__icon" src="" alt="">
-        <h4 class="service__name">Web Solutions</h4>
+        <h3 class="service__name">Web Solutions</h3>
         <p>We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. We are confident you will be pleased with the results.</p>
+        <img class="service__icon" src="/" alt="/">
       </div>
 
       <div class="service__box">
-        <img class="service__icon" src="" alt="">
-        <h4 class="service__name">Web Solutions</h4>
+        <h3 class="service__name">Web Solutions</h3>
         <p>We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. We are confident you will be pleased with the results.</p>
+        <img class="service__icon" src="/" alt="/">
       </div>
+
     </div>
   </section>
-<!-- SECTION 03 - WHAT WE DO -->
+<!-- WHAT WE DO -->
 
-<!-- SECTION 04 - WHATS UP LATELY -->
-  <section class="section04">
-    <header> <!-- SHOULD I HAVE A HEADER OR OTHER TAG HERE? -->
-      <h3 class="events__heading">What's Up Lately?</h3>
+<!-- WHATS UP LATELY -->
+  <section class="news">
+    <header> 
+      <h2 class="events__heading">What's Up Lately?</h2>
       <p class="events__subheading">Read up on our latest work</p>
     </header>
 
-    <article class="calendar-item">
-      <div class="calendar-item__date"> 
-        <p class="calendar-item__heading">29</p>
-        <p class="calendar-item__subtitle">June 2025</p>
+    <article class="blog-item">
+      <div class="blog-item__date"> 
+        <p class="blog-item__heading">29</p>
+        <p class="blog-item__subtitle">June 2025</p>
       </div>
-      <div class="calendar-item__info">
+      <div class="blog-item__info">
         <div>
-          <p class="calendar-item__heading">Sample</p>
-          <p class="calendar-item__subtitle">Photography</p>
+          <h3 class="blog-item__heading">Sample</h3>
+          <p class="blog-item__subtitle">Photography</p>
         </div>
-        <img class="calendar-item__icon" src="" alt="">
+        <img class="blog-item__icon" src="/" alt="/">
       </div>
     </article>
 
-    <article class="calendar-item">
-      <div class="calendar-item__date"> 
-        <p class="calendar-item__heading">29</p>
-        <p class="calendar-item__subtitle">June 2025</p>
+    <article class="blog-item">
+      <div class="blog-item__date"> 
+        <p class="blog-item__heading">29</p>
+        <p class="blog-item__subtitle">June 2025</p>
       </div>
-      <div class="calendar-item__info">
+      <div class="blog-item__info">
         <div>
-          <p class="calendar-item__heading">Sample</p>
-          <p class="calendar-item__subtitle">Photography</p>
+          <h3 class="blog-item__heading">Sample</h3>
+          <p class="blog-item__subtitle">Photography</p>
         </div>
-        <img class="calendar-item__icon" src="" alt="">
+        <img class="blog-item__icon" src="/" alt="/">
       </div>
     </article>
 
-    <article class="calendar-item">
-      <div class="calendar-item__date"> 
-        <p class="calendar-item__heading">29</p>
-        <p class="calendar-item__subtitle">June 2025</p>
+    <article class="blog-item">
+      <div class="blog-item__date"> 
+        <p class="blog-item__heading">29</p>
+        <p class="blog-item__subtitle">June 2025</p>
       </div>
-      <div class="calendar-item__info">
+      <div class="blog-item__info">
         <div>
-          <p class="calendar-item__heading">Sample</p>
-          <p class="calendar-item__subtitle">Photography</p>
+          <h3 class="blog-item__heading">Sample</h3>
+          <p class="blog-item__subtitle">Photography</p>
         </div>
-        <img class="calendar-item__icon" src="" alt="">
+        <img class="blog-item__icon" src="/" alt="/">
       </div>
     </article>
   </section>
-<!-- SECTION 04 - WHATS UP LATELY -->
+<!-- WHATS UP LATELY -->
 
-<!-- SECTION 05 - OUR BEST WORK -->
-<section class="section05">
-  <header> <!-- SHOULD I HAVE A HEADER OR OTHER TAG HERE? -->
-    <h3 class="portfolio__heading">Our Best Work. Period.</h3>
+<!-- OUR BEST WORK -->
+<section class="porftolio">
+  <header> 
+    <h2 class="portfolio__heading">Our Best Work. Period.</h2>
     <p class="portfolio__subheading">Client happy? We are happy.</p>
   </header>
 
   <div class="work">
-    <img class="work__img" src="" alt="">
-    <img class="work__img" src="" alt="">
-    <img class="work__img" src="" alt="">
-    <img class="work__img" src="" alt="">
-    <img class="work__img" src="" alt="">
-    <img class="work__img" src="" alt="">
-    <img class="work__img" src="" alt="">
+    <img class="work__img" src="/" alt="/">
+    <img class="work__img" src="/" alt="/">
+    <img class="work__img" src="/" alt="/">
+    <img class="work__img" src="/" alt="/">
+    <img class="work__img" src="/" alt="/">
+    <img class="work__img" src="/" alt="/">
+    <img class="work__img" src="/" alt="/">
   </div>
 </section>
-<!-- SECTION 05 - OUR BEST WORK -->
+<!-- OUR BEST WORK -->
 
-<!-- SECTION 06 - CLIENTS -->
-  <section class="section06">
+<!-- CLIENTS -->
+  <section class="clients">
   <header> <!-- SHOULD I HAVE A HEADER OR OTHER TAG HERE? -->
-    <h3 class="reviews__heading">Satisfaction Guaranteed</h3 >
+    <h2 class="reviews__heading">Satisfaction Guaranteed</h2 >
     <p class="reviews__subheading">Past clients stoked with our work. We are not happy until YOU are happy.</p>
   </header>
 
   <div class="client">
-    <img class="client__logo" src="" alt="">
+    <img class="client__logo" src="/" alt="/">
   </div>
 
   <div class="client">
-    <img class="client__logo" src="" alt="">
+    <img class="client__logo" src="/" alt="/">
   </div>
 
   <div class="client">
-    <img class="client__logo" src="" alt="">
+    <img class="client__logo" src="/" alt="/">
   </div>
 
   <div class="client">
-    <img class="client__logo" src="" alt="">
+    <img class="client__logo" src="/" alt="/">
   </div>
 
   <div class="client">
-    <img class="client__logo" src="" alt="">
+    <img class="client__logo" src="/" alt="/">
   </div>
 </section>
-<!-- SECTION 06 - CLIENTS -->
+<!-- CLIENTS -->
 </main>
 
 <!-- FOOTER -->
-<footer class="footer">
+<footer class="footer-section">
   <figure class="footer-profile">
-    <img class="footer-profile__img" src="" alt="">
+    <img class="footer-profile__img" src="/" alt="/">
     <figcaption>Alf has over 10 years experience in the industry. He is our Creative Director, digital designer, web designer and front-end developer. He is also pretty good with a sketchbook. Before starting the company Peewee worked as a designer and studio manager for a design house who boasted a number of big name clients.</figcaption>
   </figure>
 
   <div class="footer-sections">
     <section class="footer-aboutus">
-      <h5 class="footer__heading">About Us</h5>
-      <hr class="footer-aboutus__line"> 
+      <h4 class="footer__heading">About Us</h4>
       <p class="footer__content">Minions ipsum potatoooo potatoooo uuuhhh. Chasy poulet tikka masala jiji wiiiii hahaha po kass tulaliloo potatoooo. Bee do bee do bee do chasy ti aamoo! Po kass daa bee do bee do bee do po kass wiiiii butt chasy. 
 
       Pepete uuuhhh hahaha gelatooo belloo! Bananaaaa aaaaaah butt potatoooo hana dul sae butt. Hahaha wiiiii ti aamoo! Ti aamoo! Baboiii jeje. Hahaha gelatooo daa me want bananaaa! Underweaaar potatoooo tank yuuu! Aaaaaah potatoooo poopayee.</p>
     </section>
 
     <section class="footer-instagram">
-      <h5 class="footer__heading">Instagram</h5>
-      <hr class="footer-instagram__line"> 
-      <img class="footer-instagram__img" src="" alt="">
-      <img class="footer-instagram__img" src="" alt="">
-      <img class="footer-instagram__img" src="" alt="">
-      <img class="footer-instagram__img" src="" alt="">
-      <img class="footer-instagram__img" src="" alt="">
-      <img class="footer-instagram__img" src="" alt="">
-      <img class="footer-instagram__img" src="" alt="">
-      <img class="footer-instagram__img" src="" alt="">
+      <h4 class="footer__heading">Instagram</h4>
+      <img class="footer-instagram__img" src="/" alt="/">
+      <img class="footer-instagram__img" src="/" alt="/">
+      <img class="footer-instagram__img" src="/" alt="/">
+      <img class="footer-instagram__img" src="/" alt="/">
+      <img class="footer-instagram__img" src="/" alt="/">
+      <img class="footer-instagram__img" src="/" alt="/">
+      <img class="footer-instagram__img" src="/" alt="/">
+      <img class="footer-instagram__img" src="/" alt="/">
     </section>
 
     <section class="footer-news">
-      <h5 class="footer__heading">What's New on Mastodon</h5>
-      <hr class="footer-news__line"> 
+      <h4 class="footer__heading">What's New on Mastodon</h4>
       <p class="footer__content"><span class="footer__content--highlight">@Minions</span> - ipsum banana potatoooo uuuhhh. Chasy poulet tikka masala jiji wiiiii hahaha tulaliloo potatoooo. Bee do bee do bee do chasy ti aamoo! Po kass daa b ee do bee do bee do po kass wiiiii butt chasy. Pepete uuuhhh hahaha gelatooo belloo! ananaaaa aaaaaah butt potatoooo hana dul sae butt. Hahaha wiiiii ti aamoo! Ti aamoo! Baboiii jeje. Hahaha gelatooo daa me want bananaaa! Underweaaar potatoooo tank yuuu! Aaaaaah potatoooo poopayee.</p>
       <p class="footer__content"><span class="footer__content--highlight">@Minions</span> - ipsum banana potatoooo uuuhhh. Chasy poulet tikka masala jiji wiiiii hahaha tulaliloo potatoooo. Bee do bee do bee do chasy ti aamoo! Po kass daa b ee do bee do bee do po kass wiiiii butt chasy. Pepete uuuhhh hahaha gelatooo belloo! ananaaaa aaaaaah butt potatoooo hana dul sae butt. Hahaha wiiiii ti aamoo! Ti aamoo! Baboiii jeje. Hahaha gelatooo daa me want bananaaa! Underweaaar potatoooo tank yuuu! Aaaaaah potatoooo poopayee.</p>
       <p class="footer__content"><span class="footer__content--highlight">@Minions</span> - ipsum banana potatoooo uuuhhh. Chasy poulet tikka masala jiji wiiiii hahaha tulaliloo potatoooo. Bee do bee do bee do chasy ti aamoo! Po kass daa b ee do bee do bee do po kass wiiiii butt chasy. Pepete uuuhhh hahaha gelatooo belloo! ananaaaa aaaaaah butt potatoooo hana dul sae butt. Hahaha wiiiii ti aamoo! Ti aamoo! Baboiii jeje. Hahaha gelatooo daa me want bananaaa! Underweaaar potatoooo tank yuuu! Aaaaaah potatoooo poopayee.</p>
     </section>
 
     <section class="footer-trackus">
-      <h5 class="footer__heading">Track us!</h5>
+      <h4 class="footer__heading">Track us!</h4>
       <a href="" class="footer-trackus__social">
-        <img src="" alt="">
+        <img src="/" alt="/">
       </a>
       <a href="" class="footer-trackus__social">
-        <img src="" alt="">
+        <img src="/" alt="/">
       </a>
       <a href="" class="footer-trackus__social">
-        <img src="" alt="">
+        <img src="/" alt="/">
       </a>
       <a href="" class="footer-trackus__social">
-        <img src="" alt="">
+        <img src="/" alt="/">
       </a>
       <a href="" class="footer-trackus__social">
-        <img src="" alt="">
+        <img src="/" alt="/">
       </a>
 
       <form class="footer-trackus__email">
         <input type="email" placeholder="Enter your Email..." aria-label="Email address">
         <button type="submit" class="footer-trackus__button">
-          <img class="footer-trackus__email--icon" src="" alt="Submit">
+          <img class="footer-trackus__email--icon" src="/" alt="Submit">
         </button>
       </form>
     </section>
   </div>  
 
-  <div class="footer-detail">
-    <div class="footer-detail__green"></div>
-    <div class="footer-detail__yellow"></div>
-    <div class="footer-detail__red"></div>
-    <div class="footer-detail__lightblue"></div>
-    <div class="footer-detail__darkblue"></div>
-  </div>
 </footer>
 <!-- FOOTER -->
 </body>
