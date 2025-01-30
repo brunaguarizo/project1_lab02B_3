@@ -20,6 +20,9 @@
 ------ BANNER ------
 .hero--banner -> to the whole section, instead of section01
 .banner-cointainer -> to the whole info inside the banner
+
+------ WHAT WE DO -----
+.what-we-do -> instead of section number
  */
 
 html {
