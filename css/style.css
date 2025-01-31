@@ -1,399 +1,534 @@
-/*! HTML5 Boilerplate v9.0.1 | MIT License | https://html5boilerplate.com/ */
-
-/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-
-
-
-
-
-
-
-   /* I added a few new class in the code
-
------- HEADER ------
-.header__row -> to the whole header
-.header__column -> div that holds the logo
-
------- BANNER ------
-.hero--banner -> to the whole section, instead of section01
-.banner-cointainer -> to the whole info inside the banner
-
------- WHAT WE DO -----
-.what-we-do -> instead of section number
-
------ WHATS UP LATELY -----
-.news -> instead of section number
-changed calendar to blog, just to be more specific
-
------ OUR BEST WORK -----
-.portfolio -> instead of section number
-
------ CLIENTS -----
-.clients -> instead of section number
-
------ FOOTER -----
-.footer-section -> instead of section number
-
- */
+/* ------------------- GENERAL ------------------- */  
 
 html {
-  color: #222;
+  color: #3B3B3B;
   font-size: 1em;
   line-height: 1.4;
-  font-family: "Ubuntu", serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
-/* Header Typography */
 
-.navbar__item{  /* which I think is the column in this case too */
-  font-family: "Ubuntu", serif;
-  font-style: medium ;
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
 }
 
-.banner__box--text{
-  font-family: "Ubuntu", serif;
-  font-style: medium ;
+div,
+main,
+section,
+footer {
+  min-height: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+
+/* ------------------- MOBILE ------------------- */ 
+
+@media only screen and (max-width: 39.9375em) {
+
+/* ---- HEADER ---- */ 
+
+.header__content{
+  width: 100%;
+  display: grid
+}
+
+.header__row {
+  display: grid;
+  grid-template-columns: auto 1fr; /* First column auto-sizes to logo, second takes remaining space */
+  align-items: center;
+  margin-bottom: 50px
+}
+
+.logo__icon {
+  height: 40px;
+  margin-left: 0;
+  padding-left: 0;
+}
+.navbar__row {
+  background-color: beige;
+  display: none;
+}
+
+.navbar__col {
+  position:relative;
+  background-color: beige;
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* ---- MAIN   ---- */ 
+.main__row {
+  padding: 0;
+}
+
+
+/* ---- HERO BANNER ---- */ 
+.hero__row {
+    display: none;
+}
+
+.banner__box--text {
+  font-family: "Ubuntu", sans-serif;
   font-size: 18px ;
 }
 
-.introduction{
-  font-family: "Ubuntu", serif;
-  font-style: medium ;
-  font-size: 34px ;
+/* ---- WHO WE ARE - INTRO ---- */ 
+
+.introduction__row {
+  padding: 0;
 }
 
-.metrolics__highlight{
+.introduction__text {
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 34px ;
+  margin-bottom: 90px;
+}
+
+.metrolics__highlight {
   color: #1EAFDE;
 }
-/* What we do section Typography  */
-.offers__heading{
-  font-family: "Ubuntu", serif;
-  font-style: medium ;
-  font-size:s 28px ;
-}
-.offers__subheading{
-  font-family: "Ubuntu", serif;
-  font-style: regular ;
-  font-size: 12px ;
-  color: #A3A3A3;
+
+/* ---- WHAT WE DO ---- */ 
+.whatwedo__row {
+  padding: 0;
 }
 
-.service__box p{
-  color:#A3A3A3;
+.whatwedo__col {
+  text-align: center;
+
+}
+
+.offers__heading {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.offers__subheading {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
   font-size: 12px;
+  color: #A3A3A3;
+  margin-top: -10px;
+  margin-bottom: 30px;
 }
 
-/* MAIN - I added a new class in the main section
-.main__row -> to the whole main
- */
+.service__row {
+  display: block;
+  padding: 0;
+}
 
-/* What Up lately Section Typography */
-.events__heading{
+.service__col {
+  display: inline-flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  padding: 0;
+  height: 140px;
+  margin-bottom: 10px;
+}
+
+.service__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+  align-items: flex-start; 
+}
+
+.service__name {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  padding: 0;
+  margin: 0;
+}
+
+.service__icon {
+  width: 80px;
+  height: 80px;
+}
+
+.service__col p {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color:#939393;
+}
+
+/* ---- WHATS UP LATELY ---- */ 
+
+.whatsup__row {
+  margin-bottom: 90px;
+}
+
+.whatsup__col {
+  text-align: center;
+}
+
+.events__heading {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.events__subheading {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 12px;
+  color: #A3A3A3;
+  margin-top: -10px;
+  margin-bottom: 30px;
+}
+
+.blog__row {
+  display: block;
+  padding: 0;
+}
+
+.blog__col {
+  position: relative; 
+  background-image: url("../img/image-blog.png"); 
+  background-size: cover;
+  background-position: center;
+  width: 100%; 
+  height: 288px;
+  margin-bottom: 20px;
+}
+
+.blog-item__date {
+  position: absolute;
+  top: 0px; 
+  left: 0px;
+  width: 50px; 
+  height: 54px;
+  background-color: #D8605F;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
   font-family: "Ubuntu", serif;
-  font-style: medium ;
+  z-index: 10;
+}
+
+.blog-item__info {
+  position: absolute; 
+  bottom: 0;
+  left: 0;
+  width: 100%; 
+  height: 54px; 
+  background-color: #19B2DE;
+  display: flex;
+  align-items: center; /* Vertically center the content */
+  padding-left: 0;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  z-index: 10;
+}
+
+.blog-date__heading {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  color: white;
+  font-weight: 300;
+  margin: 0;
+}
+
+.blog-date__subtitle {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 8px;
+  color: white;
+  margin: 0; 
+}
+
+.blog-item__heading {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px ;
+  color: white;
+  font-weight: 300;
+}
+
+.blog-item__subtitle {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 11px ;
+  color: white;
+  font-weight: 300;
+  margin-top: -15px;
+}
+
+.blog-item__icon {
+  width: 20px;
+  height: 20px;
+  margin-left: auto; /* Empurra o ícone para a direita */
+}
+
+/* ---- OUR BEST WORK ---- */ 
+.portfolio__col {
+  text-align: center;
+}
+
+.portfolio__heading {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+.portfolio__subheading {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 12px;
+  color: #A3A3A3;
+  margin-top: -10px;
+  margin-bottom: 30px;
+}
+
+.work__row {
+  display: block;
+  padding: 0;
+}
+
+.work__col {
+  width: 100%; 
+  height: 288px;
+  margin-bottom: 20px;
+}
+
+/* ---- CLIENTS ---- */ 
+.clients__row {
+  display: none;
+}
+
+.reviews__heading {
+  font-family: "Ubuntu", sans-serif;
   font-size: 28px ;
 }
-.events__subheading{
-  font-family: "Ubuntu", serif;
-  font-style: regular ;
+.reviews__subheading {
+  font-family: "Ubuntu", sans-serif;
   font-size: 12px ;
   color: #A3A3A3;
 }
 
-.blog-item__heading{
-  font-family: "Ubuntu", serif;
-  font-style: regular ;
-  font-size: 16px ;
-  /* color: white; */
-}
 
-.blog-item__subtitle{
-  font-family: "Ubuntu", serif;
-  font-style: regular ;
-  font-size: 11px ;
-  /* color: white; */
-}
-
-/* Our Best Work Typography */
-.portfolio__heading{
-  font-family: "Ubuntu", serif;
-  font-style: medium ;
-  font-size:s 28px ;
-}
-.portfolio__subheading{
-  font-family: "Ubuntu", serif;
-  font-style: regular ;
-  font-size: 12px ;
-  color: #A3A3A3;
-}
-
-/* Clients Section Typography */
-
-.reviews__heading{
-  font-family: "Ubuntu", serif;
-  font-style: medium ;
-  font-size:s 28px ;
-}
-.reviews__subheading{
-  font-family: "Ubuntu", serif;
-  font-style: regular ;
-  font-size: 12px ;
-  color: #A3A3A3;
-}
-
-/* Footer section typography */
-.footer__heading{
-  font-family: "Ubuntu", serif;
-  font-style: medium ;
-  font-size: 15px ;
-}
-
-.footer__content{
-  font-family: "Ubuntu", serif;
-  font-style: regular ;
-  font-size: 12px ;
-}
-
-.footer__content--highlight{
-  color:#1BADE6;
-}
-
-
-
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-  border: 0;
+/* ---- FOOTER ---- */ 
+.footer__row {
+  background-color: #0E2E4E;
   margin: 0;
-  padding: 0;
+  color: white;
+  display: flex;
+  flex-direction: column; /* Forces items to stack vertically */
 }
 
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-  resize: vertical;
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
-
-.hidden,
-[hidden] {
-  display: none !important;
-}
-
-/*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
-
-.visually-hidden {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* 1 */
-}
-
-/*
- * Extends the .visually-hidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.visually-hidden.focusable:active,
-.visually-hidden.focusable:focus {
-  clip: auto;
-  height: auto;
+.footer-profile {
+  order: 1; /* Keeps Profile first */
+  display: inline-flex;
+  padding-top: 30px;
   margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
+  position: relative;
+  margin-bottom: 50px;
 }
 
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-  visibility: hidden;
-}
-
-/*
- * Clearfix: contain floats
- *
- * The use of `table` rather than `block` is only necessary if using
- * `::before` to contain the top-margins of child elements.
- */
-
-.clearfix::before,
-.clearfix::after {
+.footer-profile__text::after {
   content: "";
-  display: table;
+  position: absolute;
+  left: 118px;
+  bottom: -20px;
+  width: 150px; /* Adjust width of the line */
+  height: 4px; /* Thickness of the line */
+  background-color: #FFB901; 
 }
 
-.clearfix::after {
-  clear: both;
+.footer-profile__text {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  padding-left: 20px;
 }
 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+.footer-profile__img {
+  border-radius: 100%;
+  width: 96px;
+  height: 96px;
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+.footer-aboutus__col {
+  display: none;
 }
 
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
-
-@media print {
-  *,
-  *::before,
-  *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
-
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-
-  a[href]::after {
-    content: " (" attr(href) ")";
-  }
-
-  abbr[title]::after {
-    content: " (" attr(title) ")";
-  }
-
-  /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
-    content: "";
-  }
-
-  pre {
-    white-space: pre-wrap !important;
-  }
-
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
+.footer__heading {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-size: 16px ;
+  color: white;
+  position: relative;
+  padding-bottom: 10px;
 }
 
+.footer__content {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-size: 12px ;
+}
+
+.footer__content--highlight {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 800;
+  color:#19B2DE;
+}
+
+.footer-instagram__col {
+  display: none;
+}
+
+
+.footer-news__col {
+  order: 3; /* Moves What's New on Mastodon to the end */
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.footer-news__heading {
+  font-size: 16px;
+  font-weight: 500;
+  color: #19B2DE;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.footer-news__heading::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 235px; /* Adjust width of the line */
+  height: 2px; /* Thickness of the line */
+  background-color: #FFB901; 
+}
+
+.footer-trackus__row {
+  order: 2; /* Moves Track Us after Profile */
+  display: inline-flex;
+  padding: 0;
+}
+
+.footer-trackus__col--empty {
+  width: 105px;
+}
+
+.footer-trackus__heading {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-size: 16px ;
+  color: white;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.footer-trackus__heading::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px; /* Thickness of the line */
+  background-color: #19B2DE; 
+}
+
+.footer-trackus__icon {
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.footer-trackus__social {
+  width: 32px;
+  height: 32px;
+  border-radius: 2px;
+  display: inline-flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  margin-right: 10px;
+}
+
+.footer-trackus__social:nth-child(1) {
+  background-color: #527CC4;
+}
+
+.footer-trackus__social:nth-child(2) {
+  background-color: #E46145; 
+}
+
+.footer-trackus__social:nth-child(3) {
+  background-color: #00B0E2; 
+}
+
+.footer-trackus__social:nth-child(4) {
+  background-color: #F6679C; 
+}
+
+.footer-trackus__social:nth-child(5) {
+  background-color: #FFB901; 
+}
+
+.footer-trackus__email__col {
+  display: inline-flex;
+}
+
+input {
+  background-color: #DE6262;
+  border-radius: 2px;
+  width: 240px;
+  height: 32px;
+  border: none;
+}
+
+input::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  color: white;
+  border: none;
+  opacity: 1; /* Ensures full opacity in some browsers */
+  padding: 10px;
+}
+
+.footer-trackus__button {
+  background-color: #FFB901;
+  border-radius: 2px;
+  width: 55px;
+  height: 32px;
+  border: none;
+  position: relative;
+  left: -5px; 
+}
+  
+.footer-news__col::after {
+  content: "";
+  display: block;
+  height: 17px;
+  width: 100%;
+  margin-top: 50px;
+  background: linear-gradient(to right, 
+    #25C389 20%, 
+    #FFB901 20% 40%, 
+    #DE6262 40% 60%, 
+    #1691BD 60% 80%, 
+    #166BA2 80%);
+}
+
+}
+
+/* ------------------- TABLER ------------------- */ 
+
+@media screen and (min-width: 40em) and
+(max-width: 63.9375em) {}
+
+/* ------------------- DESKTOP ------------------- */ 
+
+@media screen and (min-width: 64em) and
+(max-width: 74.9375em) {}
