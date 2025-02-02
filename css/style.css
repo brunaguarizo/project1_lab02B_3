@@ -997,6 +997,77 @@ input::placeholder {
   grid-row: 1/2;
   grid-column: 1/2;
 }
+
+/* ---- CLIENTS ---- */ 
+.reviews__col{
+  text-align: center;
+
+}
+.reviews__heading {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.reviews__subheading {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 12px;
+  color: #A3A3A3;
+  margin-top: -10px;
+  margin-bottom: 30px;
+}
+.clients__row{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.clients__col{
+  background-color: #F3F3F3;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients__col:nth-child(1){
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+.clients__col:nth-child(2){
+  grid-row: 1/2;
+  grid-column: 2/3;
+}
+.clients__col:nth-child(3){
+  grid-row: 1/2;
+  grid-column: 3/4;
+}
+.clients__col:nth-child(4){
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+
+.clients__col:nth-child(4){
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+  
+.clients__col:nth-child(1) .clients__logo{
+  width: 150px;
+  height: 50px;
+  border: auto auto;
+}
+.clients__col:nth-child(2) .clients__logo{
+  width: 110px;
+  height: 160px;
+}
+
 }
 
 /* ------------------- DESKTOP ------------------- */ 
