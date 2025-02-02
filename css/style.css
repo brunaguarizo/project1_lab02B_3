@@ -603,7 +603,77 @@ input::placeholder {
   display: flex;
   flex-direction: column;
 }
+/* ---- HERO BANNER ---- */ 
 
+
+.hero__row{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+ 
+}
+
+.hero__col{
+  display: flex;
+  flex-direction: row;
+  background-size: cover;
+  background-position: center;
+  width: 100%; 
+  height: 288px;
+  margin-bottom: 20px;
+  padding-bottom: 50px;
+  
+}
+.banner__image{
+  display: grid;
+  background-size: cover;
+  background-position: center;
+  width: 100%; 
+  height: 400px;
+  padding-bottom: 20px;
+  border: auto 0px;
+
+}
+.banner__box{
+  
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 10px;
+  padding-right: 0px;
+
+  width: 3px;
+  height: auto;
+  position: absolute;
+  margin: 30px 30px;
+}
+
+
+
+
+.banner__box:nth-child(2) {
+  top: 35%; 
+  background-color: #DE6262;
+}
+
+.banner__box:nth-child(3) {
+  top: 10%; 
+  background-color: #186AA2;
+}
+.banner__box:last-child{
+  top: 60%;
+  background-color: #FFB901;
+}
+
+.banner__box--text{
+ 
+  background-color: rgb(255 255 255 / 0.5);
+  padding: 20px;
+  text-align: right;
+  width: max-content;
+  
+}
 }
 
 /* ------------------- DESKTOP ------------------- */ 
