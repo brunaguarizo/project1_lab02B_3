@@ -597,6 +597,13 @@ input::placeholder {
 .navbar__col:nth-child(5){
   background-color: #265787;
 }
+
+/* ---- MAIN ---- */ 
+.main__row{
+  display: flex;
+  flex-direction: column;
+}
+
 }
 
 /* ------------------- DESKTOP ------------------- */ 
