@@ -1069,17 +1069,14 @@ input::placeholder {
 }
 /* ---- FOOTER ---- */ 
 .footer-profile__img{
-  border-radius: 50%;
   height: 120px;
-  width:auto;
-  display: inline;
-  padding-right: 20px;
+  width: 160px;;
+ margin-right: 20px;
+  clip-path: circle(50%);
 }
 .footer-profile{
   display: flex;
   flex-direction: row;
-  border: 0px;
-
 }
 .footer-profile__text::after{
   content: "";
