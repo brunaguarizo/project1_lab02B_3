@@ -649,9 +649,6 @@ input::placeholder {
   margin: 30px 30px;
 }
 
-
-
-
 .banner__box:nth-child(2) {
   top: 35%; 
   background-color: #DE6262;
@@ -673,6 +670,27 @@ input::placeholder {
   text-align: right;
   width: max-content;
   
+}
+
+/* ------WHO WE ARE - INTRO ------ */
+
+.introduction__row{
+  text-align: center;
+  font-family: "Ubuntu" , sans-serif;
+  font-weight: 10;
+  margin-top: 70px;
+}
+
+.metrolics__highlight{
+  color: #1EAFDE;
+}
+
+.introduction__text {
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 34px ;
+  margin-bottom: 90px;
 }
 }
 
