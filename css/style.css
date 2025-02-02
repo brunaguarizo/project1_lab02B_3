@@ -650,12 +650,12 @@ input::placeholder {
 }
 
 .banner__box:nth-child(2) {
-  top: 35%; 
+  top: 10%; 
   background-color: #DE6262;
 }
 
 .banner__box:nth-child(3) {
-  top: 10%; 
+  top: 35%; 
   background-color: #186AA2;
 }
 .banner__box:last-child{
