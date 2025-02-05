@@ -1464,4 +1464,60 @@ input::placeholder {
   font-size: 34px ;
   margin-bottom: 20px;
 }
+
+/* ---- WHAT WE DO ---- */ 
+
+.whatwedo__row{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 10px 10px;
+  margin:auto 5%;  
+}
+
+.whatwedo__col{
+  text-align: center;
+}
+
+.offers__heading {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.offers__subheading {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 12px;
+  color: #A3A3A3;
+  margin-top: -10px;
+  margin-bottom: 30px;
+}
+.service__content{
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  text-align: center;
+
+}
+
+.service_row {
+
+display: flex;
+flex-direction: row;
+
+
+}
+
+.service__col {
+
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  text-align: center;
+  width: 30%;
+  height: auto;
+}
+
 }
