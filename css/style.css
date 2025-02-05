@@ -1297,4 +1297,81 @@ input::placeholder {
 /* ------------------- DESKTOP ------------------- */ 
 
 @media screen and (min-width: 64em) and
-(max-width: 74.9375em) {}
+(max-width: 74.9375em) {
+  /* ---- HEADER ---- */ 
+.header__content{
+  display:flex;
+  flex-direction: column;
+  background-color: white;
+}
+.navbar__row{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.navbar__col{
+  padding:10px;
+  text-align:center;
+  flex: 1;
+  text-decoration: none;
+  color: white;
+  
+}
+
+.navbar__icon{
+  margin-left: 10px;
+}
+
+.header__row{
+  background-color: white;
+  display: flex;
+  padding: 11px 0;
+  justify-content: center;
+  margin: auto 0px;
+}
+/* HOVER EFFECT  */
+.navbar__col:nth-child(1):hover{
+  background-color:#F0F08C ;
+  color:#0057C2;
+}
+.navbar__col:nth-child(2):hover{
+  background-color:#F0F08C ;
+  color:#0057C2;
+}
+.navbar__col:nth-child(3):hover{
+  background-color:#F0F08C ;
+  color:#0057C2;
+}
+.navbar__col:nth-child(4):hover{
+  background-color:#F0F08C ;
+  color:#0057C2;
+}
+.navbar__col:nth-child(5):hover{
+  background-color:#F0F08C ;
+  color:#0057C2;
+}
+
+/* HOVER END  */
+.navbar__col:nth-child(1){
+  background-color: #25C389;
+}
+.navbar__col:nth-child(2){
+  background-color: #FFB901;
+}
+.navbar__col:nth-child(3){
+  background-color: #DE6262;
+}
+.navbar__col:nth-child(4){
+  background-color: #19B2DE;
+}
+.navbar__col:nth-child(5){
+  background-color: #265787;
+}
+
+/* ---- MAIN ---- */ 
+.main__row{
+  display: flex;
+  flex-direction: column;
+}
+}
