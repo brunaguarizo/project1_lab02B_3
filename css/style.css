@@ -308,11 +308,13 @@ footer {
 .reviews__heading {
   font-family: "Ubuntu", sans-serif;
   font-size: 28px ;
+  display: none;
 }
 .reviews__subheading {
   font-family: "Ubuntu", sans-serif;
   font-size: 12px ;
   color: #A3A3A3;
+  display: none;
 }
 
 
@@ -411,6 +413,16 @@ footer {
   background-color: #FFB901; 
 }
 
+.footer-news__heading::before {
+  content: "";
+  position: absolute;
+  left: 8%; /* X position of the arrow */
+  bottom: -10px; /* Y position of the arrow */
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #FFB901; /* Yellow arrow pointing down */
+ }
+
 .footer-trackus__row {
   order: 2; /* Moves Track Us after Profile */
   display: inline-flex;
@@ -439,6 +451,16 @@ footer {
   height: 2px; /* Thickness of the line */
   background-color: #19B2DE; 
 }
+
+.footer-trackus__heading::before {
+  content: "";
+  position: absolute;
+  left: 8%; /* X position of the arrow */
+  bottom: -10px; /* Y position of the arrow */
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #19B2DE; /* Yellow arrow pointing down */
+ }
 
 .footer-trackus__icon {
   padding: 0;
@@ -513,6 +535,8 @@ input::placeholder {
   height: 17px;
   width: 100%;
   margin-top: 50px;
+  position: relative;
+  bottom: -30px; /* makes the detail touch the bottom of the page */
   background: linear-gradient(to right, 
     #25C389 20%, 
     #FFB901 20% 40%, 
@@ -1181,10 +1205,10 @@ input::placeholder {
 }
 
 .footer-trackus__col--empty{
-
   display: none;
   
 }
+
 .footer-trackus__heading{
   color: white;
 }
@@ -1247,6 +1271,7 @@ input::placeholder {
   opacity: 1; /* Ensures full opacity in some browsers */
   padding: 10px;
 }
+
 
 .footer-trackus__button {
   background-color: #FFB901;
@@ -1405,12 +1430,10 @@ input::placeholder {
   width: 100%; 
   height: 400px;
   padding-bottom: 20px;
-  border: auto 0px;
+ }
 
-}
 .banner__box{
-  
-  padding-top: 0px;
+    padding-top: 0px;
   padding-bottom: 0px;
   padding-left: 10px;
   padding-right: 0px;
@@ -1770,8 +1793,8 @@ flex-direction: row;
 .clients__col:nth-child(1) .clients__logo{
   width: 150px;
   height: 50px;
-  border: auto auto;
-}
+ }
+ 
 .clients__col:nth-child(2) .clients__logo{
   width: 110px;
   height: 160px;
