@@ -1685,6 +1685,8 @@ input::placeholder {
   flex-direction: column;
   justify-content: center;
   border: 10px 10px;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .whatwedo__col{
@@ -1734,6 +1736,11 @@ margin: 0;
 }
 
 /* ---- WHATS UP LATELY ---- */
+
+.whatsup__row{
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
 
 .whatsup__col{
   text-align: center;
@@ -1871,12 +1878,16 @@ margin: 0;
 .blog-item__icon {
   margin-right: 10px;
 }
+
+
 /* ---- OUR BEST WORK ---- */ 
 .portfolio__row {
   display: flex;
   align-items: center;
   flex-direction: column;
   position: relative;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .portfolio__col {
@@ -1997,6 +2008,11 @@ margin: 0;
 }
 
 /* ---- CLIENTS ---- */ 
+.reviews__row {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
 .reviews__col{
   text-align: center;
 }
