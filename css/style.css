@@ -144,6 +144,7 @@ footer {
   flex-direction: column;
   justify-content: flex-start; 
   align-items: flex-start; 
+  text-align: justify;
 }
 
 .service__name {
@@ -781,6 +782,10 @@ input::placeholder {
   display: flex;
   flex-direction: column; 
   align-items: center;
+ }
+
+ .service__content p {
+  text-align: justify;
  }
 
 .service_row {
@@ -1688,7 +1693,7 @@ input::placeholder {
 }
 
 .whatwedo__col{
-  text-align: center;
+  text-align:center;
 }
 
 .offers__heading {
@@ -1711,8 +1716,7 @@ input::placeholder {
   display: flex;
   flex-direction: column; 
   align-items: center;
-  text-align: left;
-
+  text-align:justify;
 }
 
 .service_row {
@@ -1727,6 +1731,7 @@ margin: 0;
   flex-direction: column-reverse;
   align-items: center;
   text-align: center;
+  justify-content: center;
   width: 30%;
   height: auto;
   padding: 0;
@@ -1734,6 +1739,10 @@ margin: 0;
 }
 
 /* ---- WHATS UP LATELY ---- */
+.whatsup__row {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
 
 .whatsup__col{
   text-align: center;
@@ -1876,7 +1885,8 @@ margin: 0;
   display: flex;
   align-items: center;
   flex-direction: column;
-  position: relative;
+  margin: 0;
+  padding: 0;
 }
 
 .portfolio__col {
@@ -1906,8 +1916,6 @@ margin: 0;
   grid-template-columns: repeat(3, 1fr); /* 3 columns */
   grid-template-rows: repeat(2, auto); /* 2 rows */
   gap: 10px;
-  padding: 0;
-  margin: 0;
 }
 
 .work__col {
@@ -1997,6 +2005,11 @@ margin: 0;
 }
 
 /* ---- CLIENTS ---- */ 
+.reviews__row {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
 .reviews__col{
   text-align: center;
 }
@@ -2046,6 +2059,7 @@ margin: 0;
 
 
 /* ---- FOOTER ---- */ 
+
 .footer-profile__img{
   height: 120px;
   width: 160px;;
@@ -2313,7 +2327,7 @@ input::placeholder {
   width: 100%;
   margin-top: 50px;
   position: relative;
-  bottom: -340px; /* makes the detail touch the bottom of the page */
+  bottom: -300px; /* makes the detail touch the bottom of the page */
   background: linear-gradient(to right, 
     #25C389 20%, 
     #FFB901 20% 40%, 
