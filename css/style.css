@@ -280,13 +280,14 @@ footer {
 
 /* ---- OUR BEST WORK ---- */ 
 .portfolio__row {
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: 100%;
-  height: 100%;
+  width: 100%; /* Garante que a largura seja igual à do blog__row */
+  height: auto;
+  display: block;
+  padding: 0;
 }
 
 .portfolio__col {
@@ -295,34 +296,90 @@ footer {
   height: auto;
 }
 
+.portfolio__heading {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.portfolio__subheading {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 12px;
+  color: #A3A3A3;
+  margin-top: -10px;
+  margin-bottom: 30px;
+}
+
 .work__row {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: block;
   padding: 0;
-  width: 100%;
-  padding: 0;
+  margin:0;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .work__col {
+  position: relative; 
+  background-image: url("../img/image-blog.png"); 
+  background-size: cover;
+  background-position: center;
+  width: 100%; 
+  height: 288px;
   margin-bottom: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: 0;
+}
+
+.work__col .overlay {
+  opacity: 1;
 }
 
 .work__image {
-  width: 100%; 
-  height: auto; 
-  object-fit: cover; 
-  padding: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding:0;
+}
+
+.work__col .work__image {
+  opacity: 0.2;
 }
 
 .overlay {
-  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(25, 178, 222, 0.6); /* #19B2DE with 60% transparency */
+  display: block;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding:0;
 }
+
+.overlay-text__heading{
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  color: white;
+  font-weight: 300;
+  position: absolute;
+  bottom: 20px; 
+  left: 20px; 
+  margin: 0;
+}
+
+.overlay-text__subtitle{
+  font-family: "Ubuntu", sans-serif;
+  font-size: 8px;
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  margin: 0;
+}
+
+
 
 
 /* ---- CLIENTS ---- */ 
@@ -350,7 +407,9 @@ footer {
   color: white;
   display: flex;
   flex-direction: column; /* Forces items to stack vertically */
+  flex-wrap: wrap; /* Ensures proper alignment if needed */
 }
+
 
 .footer-profile {
   order: 1; /* Keeps Profile first */
@@ -358,7 +417,6 @@ footer {
   padding-top: 30px;
   margin: 0;
   position: relative;
-  margin-bottom: 50px;
 }
 
 .footer-profile__text::after {
@@ -413,7 +471,6 @@ footer {
   display: none;
 }
 
-
 .footer-news__col {
   order: 3; /* Moves What's New on Mastodon to the end */
   padding: 0;
@@ -446,17 +503,20 @@ footer {
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
   border-top: 6px solid #FFB901; /* Yellow arrow pointing down */
- }
+}
 
 .footer-trackus__row {
   order: 2; /* Moves Track Us after Profile */
   display: inline-flex;
   padding: 0;
+  margin-top: -20px;
+  margin-bottom: 20px;
 }
 
 .footer-trackus__col--empty {
   width: 105px;
 }
+
 
 .footer-trackus__heading {
   font-family: "Ubuntu", sans-serif;
@@ -485,7 +545,7 @@ footer {
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
   border-top: 6px solid #19B2DE; /* Yellow arrow pointing down */
- }
+}
 
 .footer-trackus__icon {
   padding: 0;
@@ -553,15 +613,19 @@ input::placeholder {
   position: relative;
   left: -5px; 
 }
-  
-.footer-news__col::after {
+
+.footer__row-content {
+  display: flex;
+  flex-wrap: wrap; /* Ensures proper alignment if needed */
+}
+
+.footer__row-content::after {
   content: "";
-  display: block;
   height: 17px;
   width: 100%;
   margin-top: 50px;
   position: relative;
-  bottom: -30px; /* makes the detail touch the bottom of the page */
+  bottom: -600px; /* makes the detail touch the bottom of the page */
   background: linear-gradient(to right, 
     #25C389 20%, 
     #FFB901 20% 40%, 
