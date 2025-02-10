@@ -589,7 +589,6 @@ input::placeholder {
   flex-direction: row;
   width: 100%; /* Makes the navbar span the full width of the screen */
   margin: 0; /* Ensure there's no margin around the navbar */
-
 }
 
 .navbar__col{
@@ -662,8 +661,11 @@ input::placeholder {
 .main__row{
   display: flex;
   flex-direction: column;
+  padding: 0;
+  margin:0;
 }
 /* ---- HERO BANNER ---- */ 
+
 .hero__row{
   display: flex;
   flex-direction: column;
@@ -671,6 +673,9 @@ input::placeholder {
   position: relative;
   padding: 0;
   margin: 0;
+  background-color: #ebebeb;
+  height: 400px;
+  width: 100%; 
 }
 
 .hero__col{
@@ -679,22 +684,20 @@ input::placeholder {
   background-size: cover;
   background-position: center;
   width: 100%; 
-  height: 288px;
+  height: 400x;
   margin-bottom: 20px;
   padding-bottom: 50px;
 }
 
 .banner__image{
   display: grid;
-  background-size: cover;
   background-position: center;
-  width: 100%; 
   height: 400px;
-  padding-bottom: 20px;
+  width: 100%; 
+  object-fit: cover;
 }
 
-.banner__box{
-  
+.banner__box{ 
   padding-top: 0px;
   padding-bottom: 0px;
   padding-left: 10px;
@@ -706,26 +709,24 @@ input::placeholder {
 }
 
 .banner__box:nth-child(2) {
-  top: 10%; 
+  top: 30%; 
   background-color: #DE6262;
 }
 
 .banner__box:nth-child(3) {
-  top: 35%; 
+  top: 42%; 
   background-color: #186AA2;
 }
 .banner__box:last-child{
-  top: 60%;
+  top: 54%;
   background-color: #FFB901;
 }
 
 .banner__box--text{
- 
   background-color: rgb(255 255 255 / 0.8);
   padding: 10px;
   text-align: right;
   width: max-content;
-  
 }
 
 /* ------ WHO WE ARE - INTRO ------ */
@@ -788,6 +789,7 @@ input::placeholder {
 
  .service__content p {
   text-align: justify;
+  color: #939393;
  }
 
 .service_row {
@@ -931,6 +933,7 @@ input::placeholder {
   color: white;
   font-weight: 300;
   margin-top: -15px;
+  margin-bottom: 15px;
 }
 
 .blog-item__icon {
@@ -1026,7 +1029,6 @@ input::placeholder {
   grid-template-rows: auto auto auto;
   gap: 10px;
   padding: 0;
-  margin: 0;
 }
 
 .work__col {
@@ -1034,9 +1036,10 @@ input::placeholder {
   width: 100%;
   height: 100%;
   padding: 0;
+  margin: 2px;
 }
 
-.work__col:hover .overlay {
+.work__col .overlay {
   opacity: 1;
 }
 
@@ -1047,7 +1050,7 @@ input::placeholder {
   padding:0;
 }
 
-.work__col:hover .work__image {
+.work__col .work__image {
   opacity: 0.2;
 }
 
@@ -1227,6 +1230,13 @@ input::placeholder {
   grid-template-rows: auto auto auto;
   gap:0px;
   margin-top: 10px;
+}
+
+.footer__row-content {
+  display: grid;
+  background-color: #0E2E4E;
+  grid-template-columns:1fr auto;
+  grid-template-rows: auto auto auto;
 }
 
 .footer__col {
@@ -2153,7 +2163,7 @@ margin: 0;
 .footer-aboutus__col{
   grid-column: 1/2;
   grid-row: 2/3;
-  width: 232px;
+  width: auto;
   height: 100%;
   color: white;
 }
@@ -2185,7 +2195,7 @@ margin: 0;
 .footer-instagram__col{
   grid-column: 2/3;
   grid-row: 2/3;
-  width: 232px;
+  width: auto;
   height: 100%;
   display: grid; 
   grid-template-columns: repeat(3, 1fr); 
@@ -2231,7 +2241,7 @@ margin: 0;
   
 }
 .footer-trackus__col {
-  width: 250px;
+  width: auto;
   padding: 0;
 }
 
@@ -2330,14 +2340,14 @@ input::placeholder {
   height: 32px;
   border: none;
   position: relative;
-  left: -25px; 
-  top: 3px;
+  left: 150px; 
+  top: -32px;
 }
 
 .footer-news__col{
   grid-column: 3/4;
   grid-row: 2/3;
-  width: 320px;
+  width: auto;
   height: 100%;
  color: white;
 
@@ -2375,7 +2385,7 @@ input::placeholder {
   width: 100%;
   margin-top: 50px;
   position: relative;
-  bottom: -595px; /* makes the detail touch the bottom of the page */
+  bottom: -546px; /* makes the detail touch the bottom of the page */
   background: linear-gradient(to right, 
     #25C389 20%, 
     #FFB901 20% 40%, 
