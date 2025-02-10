@@ -14,6 +14,8 @@ body {
   padding: 0; /* Removes default padding */
 }
 
+
+
 *,
 *:before,
 *:after {
@@ -1492,15 +1494,17 @@ input::placeholder {
 /* ---------------------------------------------------------  DESKTOP ---------------------------------------------------------  */ 
 
 @media screen and (min-width: 64em) {
-
+ 
+  
 /* ---- HEADER ---- */
 .header__content {
+  padding-left: 208px;
+  padding-right: 223px;
   display: flex;
   flex-direction: row;
   background-color: white;
   justify-content: space-between;
   align-items: center;
-  padding-top: 30px
 }
 
 .header__row {
@@ -1512,7 +1516,6 @@ input::placeholder {
 .logo__icon {
   width: 100%;
   max-width: 200px; /* Example max-width for the logo */
-  padding-left: 20px;
   padding-bottom: 10;
   align-self: flex-end;
 }
@@ -1524,7 +1527,7 @@ input::placeholder {
 }
 
 .navbar__col {
-  padding-left: 30px;
+  padding-left: 20px;
   padding-bottom: 20px;
   text-align: left;
   flex: 1;
@@ -1600,6 +1603,8 @@ input::placeholder {
 
 
 .hero__row{
+  padding-left: 208px;
+  padding-right: 208px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1622,10 +1627,10 @@ input::placeholder {
 
 .banner__image{
   display: grid;
-  background-size: cover;
   background-position: center;
-  width: 100%; 
   height: 400px;
+  width: 100%; 
+  object-fit: cover;
  }
 
 .banner__box{
@@ -1640,12 +1645,12 @@ input::placeholder {
 }
 
 .banner__box:nth-child(2) {
-  top: 10%; 
+  top: 20%; 
   background-color: #DE6262;
 }
 
 .banner__box:nth-child(3) {
-  top: 35%; 
+  top: 40%; 
   background-color: #186AA2;
 }
 .banner__box:last-child{
@@ -1654,12 +1659,11 @@ input::placeholder {
 }
 
 .banner__box--text{
- 
   background-color: rgb(255 255 255 / 0.5);
   padding: 20px;
   text-align: right;
   width: max-content;
-  
+  font-size: 24px;
 }
 
 /* ------WHO WE ARE - INTRO ------ */
@@ -1669,6 +1673,8 @@ input::placeholder {
   font-family: "Ubuntu" , sans-serif;
   font-weight: 10;
   margin-top: 70px;
+  padding-left: 208px;
+  padding-right: 208px;
 }
 
 .metrolics__highlight{
@@ -1690,6 +1696,8 @@ input::placeholder {
   flex-direction: column;
   justify-content: center;
   border: 10px 10px;
+  padding-left: 208px;
+  padding-right: 208px;
 }
 
 .whatwedo__col{
@@ -1709,7 +1717,7 @@ input::placeholder {
   font-size: 12px;
   color: #A3A3A3;
   margin-top: -10px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .service__content{
@@ -1736,6 +1744,13 @@ margin: 0;
   height: auto;
   padding: 0;
   margin: 0;
+}
+
+.service__col p {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color:#939393;
 }
 
 /* ---- WHATS UP LATELY ---- */
@@ -1767,6 +1782,8 @@ margin: 0;
 .blog__row{
  display: flex;
  flex-direction: row;
+ padding-left: 208px;
+ padding-right: 208px;
 }
 
 .blog__col {
@@ -1875,6 +1892,7 @@ margin: 0;
   color: white;
   font-weight: 300;
   margin-top: -15px;
+  margin-bottom:15px;
 }
 
 .blog-item__icon {
@@ -1913,16 +1931,19 @@ margin: 0;
 
 .work__row {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns */
-  grid-template-rows: repeat(2, auto); /* 2 rows */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
   gap: 10px;
+  padding-left: 230px;
+  padding-right: 230px;
+  box-sizing: border-box; /* Ensures padding is included in width calculations */
 }
 
 .work__col {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  padding: 0;
+    position: relative;
+    max-width: 100%; /* Allows columns to fit the grid */
+    height: auto;
+    padding: 0;
 }
 
 .work__col:hover .overlay {
@@ -2033,9 +2054,10 @@ margin: 0;
 .clients__row {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     margin: 0;
-    padding: 0;
+    padding-left: 208px;
+    padding-right: 208px;
 }
 
 .clients__col {
@@ -2054,21 +2076,30 @@ margin: 0;
 .clients__logo {
   width: 100%;
   height: auto;
+  object-fit: scale-down;
 }
-
 
 
 /* ---- FOOTER ---- */ 
 
 .footer-profile__img{
   height: 120px;
-  width: 160px;;
- margin-right: 20px;
+  width: 120px; /* Igualar altura e largura para manter o círculo perfeito */
+  margin-right: 20px;
   clip-path: circle(50%);
+  object-fit: cover; /* Garante que a imagem preencha o espaço sem distorção */
+  display: block;
 }
+
 .footer-profile{
   display: flex;
   flex-direction: row;
+}
+
+.footer-profile__text {
+  font-size: 12px;
+  font-family: "Ubuntu", sans-serif;
+  width: 60%;
 }
 
 .footer-profile__text::after{
@@ -2087,6 +2118,17 @@ margin: 0;
   grid-template-columns:auto auto auto auto;
   grid-template-rows: auto auto auto;
   gap:10px;
+  padding-left: 208px;
+  padding-right: 208px;
+}
+
+.footer__row-content{
+  display: grid;
+  background-color: #0E2E4E;
+  grid-template-columns:3fr 3fr 5fr 1fr;
+  grid-template-rows: auto auto auto;
+  gap:10px;
+  margin-top: -100px;
 }
 
 .footer__col{
@@ -2111,7 +2153,7 @@ margin: 0;
 .footer-aboutus__col{
   grid-column: 1/2;
   grid-row: 2/3;
-  width: 100%;
+  width: 232px;
   height: 100%;
   color: white;
 }
@@ -2143,7 +2185,7 @@ margin: 0;
 .footer-instagram__col{
   grid-column: 2/3;
   grid-row: 2/3;
-  width: 100%;
+  width: 232px;
   height: 100%;
   display: grid; 
   grid-template-columns: repeat(3, 1fr); 
@@ -2151,7 +2193,6 @@ margin: 0;
   margin: 0;
   padding: 0;
   gap:10px;
-
 }
 
 .footer-instagram__col h4{
@@ -2189,11 +2230,16 @@ margin: 0;
   height: auto;
   
 }
+.footer-trackus__col {
+  width: 250px;
+  padding: 0;
+}
 
 .footer-trackus__row{
   grid-column: 4/5;
   grid-row: 2/3;
   height: 100%;
+  padding: 0;
 }
 
 .footer-trackus__col--empty{
@@ -2261,9 +2307,11 @@ margin: 0;
 input {
   background-color: #DE6262;
   border-radius: 2px;
-  width: 240px;
+  width: 145px;
   height: 32px;
   border: none;
+  margin-left: 18px;
+  margin-right: 18px;
 }
 
 input::placeholder {
@@ -2282,14 +2330,14 @@ input::placeholder {
   height: 32px;
   border: none;
   position: relative;
-  left: -5px; 
+  left: -25px; 
   top: 3px;
 }
 
 .footer-news__col{
   grid-column: 3/4;
   grid-row: 2/3;
-  width: 300px;
+  width: 320px;
   height: 100%;
  color: white;
 
@@ -2320,14 +2368,14 @@ input::placeholder {
   color: #00B0E2;
 }
 
-.footer-aboutus__col::after {
+.footer__row-content::after {
   content: "";
   display: block;
   height: 17px;
   width: 100%;
   margin-top: 50px;
   position: relative;
-  bottom: -300px; /* makes the detail touch the bottom of the page */
+  bottom: -595px; /* makes the detail touch the bottom of the page */
   background: linear-gradient(to right, 
     #25C389 20%, 
     #FFB901 20% 40%, 
@@ -2335,5 +2383,4 @@ input::placeholder {
     #1691BD 60% 80%, 
     #166BA2 80%);
 }
-
 }
